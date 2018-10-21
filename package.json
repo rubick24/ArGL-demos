@@ -1,0 +1,25 @@
+{
+  "name": "argl-demos",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "license": "MIT",
+  "sideEffects": false,
+  "scripts": {
+    "start": "webpack-dev-server --config ./config/webpack.dev.js",
+    "build": "webpack --config ./config/webpack.prod.js"
+  },
+  "dependencies": {
+    "argl": "^0.2.2"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "json-loader": "^0.5.7",
+    "raw-loader": "^0.5.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9",
+    "webpack-merge": "^4.1.4"
+  }
+}
