@@ -15,6 +15,15 @@ canvas.width = window.innerWidth
 canvas.height = window.innerHeight
 document.body.style.margin = '0'
 document.body.style.overflow = 'hidden'
+let tips = document.createElement('p')
+tips.style.color = '#fff'
+tips.style.position = 'absolute'
+tips.style.bottom = '0px'
+tips.style.width = '100%'
+tips.style.textAlign = 'center'
+tips.innerText = 'lock pointer to rotate camera / w,a,s,d,spcae and shift to move / q,e to roll'
+document.body.appendChild(tips)
+
 let argl = new ArGL(canvas)
 let gl = argl.gl
 gl.enable(gl.DEPTH_TEST)

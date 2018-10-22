@@ -7,6 +7,7 @@ const dirs = fs.readdirSync('./src/')
 dirs.splice(dirs.indexOf('assets'), 1)
 dirs.splice(dirs.indexOf('index.html'), 1)
 dirs.splice(dirs.indexOf('index.js'), 1)
+dirs.splice(dirs.indexOf('styles.js'), 1)
 
 const entry = { main: './src/index.js' }
 dirs.forEach(v => {
@@ -27,8 +28,7 @@ module.exports = {
   entry: entry,
   output: {
     filename: '[name]/bundle.js',
-    path: path.resolve(__dirname, '../dist'),
-    publicPath: '/'
+    path: path.resolve(__dirname, '../dist')
   },
   resolve: {
     extensions: [".js", ".json"]
